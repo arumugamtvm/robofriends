@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+// import React, { useState,useDidCatch,useEffect,log } from "react";
 
-const ErrorBoundary = (props) => {
-    const [hasError, setHasError] = useState(false)
-    const caught = useDidCatch()
+// const ErrorBoundary = (props) => {
+//     const [hasError, setHasError] = useState(false)
+//     const caught = useDidCatch()
 
-    useEffect(() => {
-        const [error, info] = caught
-        log({ error, info })
-        setHasError(true)
-    }, [caught])
+//     useEffect(() => {
+//         const [error, info] = caught
+//         log({ error, info })
+//         setHasError(true)
+//     }, [caught])
 
-    return hasError ? <h1>Oooops. That is not good</h1> : props.children
+//     return hasError ? <h1>Oooops. That is not good</h1> : props.children
 
-}
+// }
 
-export default ErrorBoundary
+// export default ErrorBoundary

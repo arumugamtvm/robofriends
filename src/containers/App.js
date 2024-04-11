@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import CardList from '../components/CardList'
 import Scroll from '../components/Scroll'
 import SearchBox from '../components/SearchBox'
-import ErrorBoundary from '../components/ErrorBoundary'
+// import ErrorBoundary from '../components/ErrorBoundary'
 
 const App = () => {
     const [searchValue, setSearchValue] = useState('')
@@ -24,9 +24,9 @@ const App = () => {
             <h1 className='f1'>RoboFriends</h1>
             <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
             {!filteredRobots.length ? <h1>Loading</h1> : <Scroll>
-                <ErrorBoundary>
+                {/* <ErrorBoundary> */}
                     <CardList robots={filteredRobots} />
-                </ErrorBoundary>
+                {/* </ErrorBoundary> */}
             </Scroll>}
         </div>
     )
