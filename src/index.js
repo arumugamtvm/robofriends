@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/robofriends' element={<App />} />
+      <Route path='/robofriends/' element={<App />} />
       <Route path='/robofriends/:name' element={<Welcome />} />
     </Routes>
   </BrowserRouter>
