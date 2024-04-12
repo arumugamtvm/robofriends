@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} />
-      <Route path='/:name' element={<Welcome />} />
+      <Route path='/robofriends' element={<App />} />
+      <Route path='/robofriends/:name' element={<Welcome />} />
     </Routes>
   </BrowserRouter>
 );
